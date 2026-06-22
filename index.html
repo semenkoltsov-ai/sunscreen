@@ -202,6 +202,10 @@
   input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
   .form-card .btn{width:100%;margin-top:8px;font-size:16px}
   .form-note{font-size:12px;color:var(--ink-soft);text-align:center;margin-top:14px;line-height:1.5}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--ink-soft);font-weight:400;letter-spacing:0;margin:2px 0 4px}
+  .consent input{width:auto;flex:none;margin-top:3px}
+  .consent a{color:var(--gold-deep);text-decoration:underline}
+  .foot-links a{color:rgba(246,239,228,.8);text-decoration:underline}
   .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media(max-width:560px){.two{grid-template-columns:1fr}.form-card{padding:26px 20px}}
 
@@ -529,8 +533,9 @@
         <label for="comment">Город / комментарий</label>
         <textarea id="comment" name="Комментарий" rows="2" placeholder="Город доставки, удобное время звонка"></textarea>
       </div>
+      <label class="consent"><input type="checkbox" name="Согласие" value="да" required> Я принимаю условия <a href="offer.html" target="_blank">публичной оферты</a> и даю согласие на обработку персональных данных согласно <a href="privacy.html" target="_blank">политике конфиденциальности</a>.</label>
       <button type="submit" class="btn btn-gold">Оформить заявку →</button>
-      <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Мы не передаём контакты третьим лицам.</p>
+      <p class="form-note">Мы используем ваши данные только для обработки заказа и не передаём их третьим лицам в маркетинговых целях.</p>
     </form>
   </div>
 </section>
@@ -540,6 +545,7 @@
   <div class="wrap foot-inner">
     <div class="logo">AURÉ<span style="color:var(--gold)">OL</span></div>
     <div>© 2026 AURÉOL Skincare. Премиальная защита от солнца.</div>
+    <div class="foot-links"><a href="privacy.html">Политика конфиденциальности</a> · <a href="offer.html">Оферта</a></div>
     <div>Связь: semenkoltsov@gmail.com</div>
   </div>
 </footer>
